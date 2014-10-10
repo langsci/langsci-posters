@@ -5,6 +5,7 @@
 }
 % \usepackage{times} 
 \usepackage{amsmath,amssymb}
+ \usepackage{textcomp}
 % \usepackage{sfmath} % for sans serif math fonts; wget http://dtrx.de/od/tex/sfmath.sty
 % \usepackage[english]{babel} 
 \usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}
@@ -13,6 +14,8 @@
 \usepackage{xspace}
 \usepackage{fp}
 \usepackage{ifthen}
+% \usepackage[utf8x]{inputenc}
+% \usepackage[T1]{fontenc}
 % \usepackage{libertine}
 
 \listfiles
@@ -46,19 +49,19 @@
     \begin{column}{\linewidth}
       \begin{itemize}
       \item Open Access bisher vor allem in den Naturwissenschaften
-      \item Andere Publikationskultur in den Geisteswissenschaften (mehr Monographien)
+      \item Andere Publikationskultur in den Geisteswissenschaften \mbox{(mehr Monographien)}
       \item Wie m{\"u}ssen die Modelle der Naturwissenschaften angepasst werden? 
       \end{itemize}
       \end{column}
 \end{columns}
     \end{block}    
 
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp1}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp2}
     \begin{block}{Language Science Press}
  \begin{columns}
     \begin{column}{\linewidth}
       \begin{itemize} 
-      \item gef{\"o}rdert von der DFG mit 500.000 EUR f{\"u}r 2 Jahre
+      \item gef{\"o}rdert von der DFG mit 575.000 EUR f{\"u}r 2 Jahre
       \item ans{\"a}ssig an der FU
       \item 2 Programmierer, 1 Sysadmin, 1 Betriebswirtin, 1 Koordinator
       \end{itemize}
@@ -66,33 +69,41 @@
 \end{columns}
     \end{block}
    
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp2} 
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp3} 
     \begin{block}{Prestige}
-      \begin{itemize}
-      \item Spitzenqualit{\"a}t
-      \item Professionelles Design 
-      \item Professionelles Typographie
-      \begin{itemize}
-       \item bessere Zeicheunterst{\"u}tzung als die kommerzielle Konkurrenz
+      \begin{columns}
+	\begin{column}{.48\linewidth}
+	  \begin{itemize}
+	    \item Spitzenqualit{\"a}t
+	    \item Professionelles Design 
+	    \item Professionelle Typographie
+	    \begin{itemize}
+	      \item bessere Zeicheunterst{\"u}tzung als die kommerzielle Konkurrenz
+	    \end{itemize}
+	  \end{itemize}
+	\end{column}
+	\begin{column}{.48\linewidth} 
+	  \includegraphics[width=.7\linewidth]{schwaengma.png}
+	\end{column}
+      \end{columns} 
 
-	\includegraphics[width=.3\linewidth]{schwaengma.png}
-      \end{itemize}
-      \item Selektivit{\"a}t
       \begin{itemize}
-      \item keine Dissertationen
-      \item traditioneller Peer Review
-      \item bisher 30\% Ablehnungsquote
-      \item deutlicher Unterschied zu anderen Universit{\"a}tsverlagen
-      \end{itemize}
-      \item Renommierte Unterst{\"u}tzer (Harvard, Stanford, Oxford, CNRS) aus $>$30 L{\"a}ndern
-      \item Renommierte Reihenherausgeber (u.a. Luc Steels)
+	\item Selektivit{\"a}t
+	  \begin{itemize}
+	    \item keine Dissertationen
+	    \item traditioneller Peer Review
+	    \item bisher 30\% Ablehnungsquote
+	    \item deutlicher Unterschied zu anderen Universit{\"a}tsverlagen
+	  \end{itemize}
+	\item Renommierte Unterst{\"u}tzer (Harvard, Stanford, Oxford, CNRS) \mbox{aus $>$30 L{\"a}ndern}
+	\item Renommierte Reihenherausgeber (u.\,a.\ Luc Steels)
       \end{itemize}
     \end{block}
 
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp3}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp4}
     \begin{block}{Community}
  \begin{columns}
-    \begin{column}{.48\linewidth}
+    \begin{column}{.58\linewidth}
       \begin{itemize}
       \item Reihenbasiert 
       \item Herausgeber organisieren Reihen selbst{\"a}ndig
@@ -100,9 +111,8 @@
       \item Gamificationsystem 
       \end{itemize} 
  \end{column}
-    \begin{column}{.48\linewidth}
-\hspace{3cm}
-\includegraphics[width=.5\textwidth]{barnstar.png}
+    \begin{column}{.38\linewidth}  
+\includegraphics[width=.6\textwidth]{barnstar.png}\scalebox{.5}{\tiny \raggedleft   Pic CC-BY Durin, Antonu} 
  \end{column}
  \end{columns}
       \begin{itemize}
@@ -112,7 +122,7 @@
     \end{block}
  
 
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp4}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp5}
     \begin{block}{Qualit{\"a}tskontrolle}
       \begin{itemize}
       \item inhaltlich durch Reihenherausgeber
@@ -120,13 +130,31 @@
       \end{itemize} 
     \end{block}
 
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp5}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp6}
     \begin{block}{Entwicklung}
-      \begin{itemize}
-      \item projiziert: 9 Reihen f{\"u}r 2016
-      \item bereits erreicht: 14 Reihen, 42 Ver{\"o}ffentlichungsanfragen, 
-      \end{itemize} 
-    \includegraphics{reihen.png}
+      \begin{columns}
+      \begin{column}{.70\textwidth}
+	\begin{itemize}
+	  \item Reihen
+	    \begin{itemize}
+	      \item projiziert: 5 Reihen f{\"u}r 2014
+	      \item bereits erreicht: 14 Reihen, 42 Ver{\"o}ffentlichungsanfragen, 
+	    \end{itemize} 
+	  \item B{\"u}cher
+	    \begin{itemize}
+	      \item projiziert: 20 B{\"u}cher f{\"u}r 2014
+	      \item bereits erreicht: 14 B{\"u}cher
+	      \item 42 Ver{\"o}ffentlichungsanfragen bei 30\% Ablehnung $\to$ \mbox{$\sim$28 B{\"u}cher im ersten Jahr}
+	    \end{itemize}
+	\end{itemize} 
+	\end{column}
+      \begin{column}{.26\textwidth}
+	  \includegraphics[width=\textwidth]{reihen.pdf} \\
+	  \includegraphics[width=\textwidth]{buecher.pdf}
+
+      
+	\end{column}
+      \end{columns}
     \end{block}
 
 
@@ -137,7 +165,7 @@
   \begin{column}{.45\linewidth}
  
     
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp6}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp7}
     \begin{block}{Reihen}
       \begin{columns}
 \begin{column}{.48\textwidth}
@@ -166,12 +194,12 @@
       \vskip1ex 
     \end{block}
     
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp7}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp8}
     \begin{block}{B\"{u}cher}
       \includegraphics[width=.9\textwidth]{catalog.png}
     \end{block}  
   
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp8}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp9}
     \begin{block}{Vertrieb}
       \begin{columns}
 \begin{column}{.48\textwidth}
@@ -191,7 +219,7 @@
        
     \end{block}
 
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp9}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp10}
     \begin{block}{http://www.langsci-press.org}
       \begin{center}
       \includegraphics[width=.8\linewidth]{webseite.png}
@@ -204,9 +232,6 @@
       \begin{itemize}
        \item Alle Inhalte werden grunds{\"a}tzlich unter CC-BY bereitgestellt
       \end{itemize}
-      {\tiny 
-      \item  Barnstar CC-BY Durin, Antonu 
-      } 
     \end{block}
 
 

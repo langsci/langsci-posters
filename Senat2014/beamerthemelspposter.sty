@@ -74,14 +74,19 @@
 %\setbeamercolor{example text}{fg=taorange}
 %\setbeamercolor{structure}{fg=ta3skyblue}
 
-\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{itemize items}{{\usebeamercolor[bg]{headline}\scalebox{.6}{\bf\textrangle}}}
 \setbeamertemplate{navigation symbols}{}  % no navigation on a poster
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block begin}{
   \vskip.75ex
-  \begin{beamercolorbox}[ht=5ex,dp=1ex,center,rounded=false,shadow=false,leftskip=1cm,colsep*=.75ex]{block title}%
-    \usebeamerfont*{block title} \insertblocktitle~{\hrulefill}
+  \begin{beamercolorbox}[ht=5ex,dp=1ex,center,rounded=false,shadow=false,leftskip=.6cm,colsep*=.75ex]{headline}%
+    \usebeamerfont*{block title} 
+  \begin{tabular}{p{21.64cm}r}
+  \insertblocktitle&
+    {\usebeamercolor[bg]{block title}\raisebox{1.37cm}{\rule{14cm}{.4cm}}}
+  \end{tabular}
+
   \end{beamercolorbox}%
   {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
   \usebeamerfont{block body}%
@@ -99,27 +104,32 @@
   \begin{beamercolorbox}[wd=\paperwidth]{headline}
     \begin{columns}[T]
       \begin{column}{.25\paperwidth}
-        \vskip2ex
-        \raggedleft
-         \includegraphics[width=.9\linewidth,keepaspectratio]{lsp-logo-white-blue.png}
+        \vskip8.5ex
+        \hskip14ex
+        \raggedright
+         \includegraphics[height=24ex,keepaspectratio]{langsci_logo_nocolor.pdf}
       \end{column}
-      \begin{column}{.05\paperwidth}
+      \begin{column}{.07\paperwidth}
       \end{column}
       \begin{column}{.75\paperwidth}
         \hskip2ex
-        \vskip4ex
-        \raggedright
-        \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
-        \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
-        \usebeamercolor{institute in headline}{\color{fg}\Large{\insertinstitute}\\[1ex]}     
+        \vskip8ex
+        \raggedright 
+	\parbox{35cm}{
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1.2ex]}
+        \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[.8ex]}
+        \usebeamercolor{auhor in headline}{\color{fg}\Large{\insertinstitute}\\[1ex]}     
+	}
+
       \end{column}
 
     \end{columns}
+        \vskip4ex
   \end{beamercolorbox}
 
-  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
-    \rule{0pt}{2pt}
-  \end{beamercolorbox}
+%   \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+%     \rule{0pt}{2pt}
+%   \end{beamercolorbox}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

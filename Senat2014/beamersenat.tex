@@ -1,12 +1,12 @@
-\documentclass[final,utf8]{beamer}
+\documentclass[final]{beamer}
 \mode<presentation>
 {
   \usetheme{lspposter}
 }
-\usepackage{times}
+% \usepackage{times} 
 \usepackage{amsmath,amssymb}
-\usepackage{sfmath} % for sans serif math fonts; wget http://dtrx.de/od/tex/sfmath.sty
-\usepackage[english]{babel} 
+% \usepackage{sfmath} % for sans serif math fonts; wget http://dtrx.de/od/tex/sfmath.sty
+% \usepackage[english]{babel} 
 \usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}
 \usepackage{booktabs,array}
 \usepackage{listings}
@@ -23,11 +23,11 @@
 % Display a grid to help align images
 %\beamertemplategridbackground[1cm]
 
-\title{\Huge Open Access Monographien für die Sprachwissenschaft}
+\title{\Huge Language Science Press}
 
-\author{Sebastian Nordhoff}
-\institute[LangSci] % (optional, but mostly needed)
-{Language Science Press}
+\author{Sebastian Nordhoff, FU Berlin}
+\institute[Open-Access-Strategie]{Open-Access-Strategie f{\"u}r Berlin} % (optional, but mostly needed)
+% {Language Science Press}
 
 \date{13.10.2014}
 
@@ -42,40 +42,94 @@
 
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp1}
     \begin{block}{Hintergrund}
+ \begin{columns}
+    \begin{column}{\linewidth}
       \begin{itemize}
-      \item ...
+      \item Open Access bisher vor allem in den Naturwissenschaften
+      \item Andere Publikationskultur in den Geisteswissenschaften (mehr Monographien)
+      \item Wie m{\"u}ssen die Modelle der Naturwissenschaften angepasst werden? 
       \end{itemize}
+      \end{column}
+\end{columns}
+    \end{block}    
+
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp1}
+    \begin{block}{Language Science Press}
+ \begin{columns}
+    \begin{column}{\linewidth}
+      \begin{itemize} 
+      \item gef{\"o}rdert von der DFG mit 500.000 EUR f{\"u}r 2 Jahre
+      \item ans{\"a}ssig an der FU
+      \item 2 Programmierer, 1 Sysadmin, 1 Betriebswirtin, 1 Koordinator
+      \end{itemize}
+      \end{column}
+\end{columns}
     \end{block}
    
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp2} 
-    \begin{block}{Community}
+    \begin{block}{Prestige}
       \begin{itemize}
-      \item ....
+      \item Spitzenqualit{\"a}t
+      \item Professionelles Design 
+      \item Professionelles Typographie
+      \begin{itemize}
+       \item bessere Zeicheunterst{\"u}tzung als die kommerzielle Konkurrenz
+
+	\includegraphics[width=.3\linewidth]{schwaengma.png}
+      \end{itemize}
+      \item Selektivit{\"a}t
+      \begin{itemize}
+      \item keine Dissertationen
+      \item traditioneller Peer Review
+      \item bisher 30\% Ablehnungsquote
+      \item deutlicher Unterschied zu anderen Universit{\"a}tsverlagen
+      \end{itemize}
+      \item Renommierte Unterst{\"u}tzer (Harvard, Stanford, Oxford, CNRS) aus $>$30 L{\"a}ndern
+      \item Renommierte Reihenherausgeber (u.a. Luc Steels)
       \end{itemize}
     \end{block}
 
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp3}
-    \begin{block}{Team}
+    \begin{block}{Community}
+ \begin{columns}
+    \begin{column}{.48\linewidth}
       \begin{itemize}
-      \item ..
+      \item Reihenbasiert 
+      \item Herausgeber organisieren Reihen selbst{\"a}ndig
+      \item Begutachtung, Korrektorat, Satz durch Community
+      \item Gamificationsystem 
+      \end{itemize} 
+ \end{column}
+    \begin{column}{.48\linewidth}
+\hspace{3cm}
+\includegraphics[width=.5\textwidth]{barnstar.png}
+ \end{column}
+ \end{columns}
+      \begin{itemize}
+      \item international aufgestellte Reihenherausgeber aus 5 Kontinenten
+      \item internationale Leser- und Autorenschaft
       \end{itemize}
     \end{block}
+ 
 
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp4}
-    \begin{block}{Geschäftsmodell}
+    \begin{block}{Qualit{\"a}tskontrolle}
       \begin{itemize}
-      \item ...
+      \item inhaltlich durch Reihenherausgeber
+      \item formal (Layout, Satz etc) durch Language Science Press
       \end{itemize} 
     \end{block}
 
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp5}
     \begin{block}{Entwicklung}
       \begin{itemize}
-      \item ...
+      \item projiziert: 9 Reihen f{\"u}r 2016
+      \item bereits erreicht: 14 Reihen, 42 Ver{\"o}ffentlichungsanfragen, 
       \end{itemize} 
+    \includegraphics{reihen.png}
     \end{block}
 
-    
+
    
   \end{column}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,40 +139,78 @@
     
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp6}
     \begin{block}{Reihen}
-\begin{itemize}
- \item African Language Grammars and Dictionaries 
- \item Computational Models of Language Evolution 
- \item Conceptual Foundations of Language Science 
- \item Contemporary African Linguistics
- \item Em­pir­i­cal­ly Ori­ent­ed The­o­ret­i­cal Mor­phol­o­gy and Syn­tax 
- \item Im­ple­ment­ed Gram­mars 
+      \begin{columns}
+\begin{column}{.48\textwidth}
+      \begin{itemize}
+      \item African Language Grammars and Dictionaries 
+      \item Computational Models of Language Evolution 
+      \item Conceptual Foundations of Language Science 
+      \item Contemporary African Linguistics
+      \item Em­pir­i­cal­ly Ori­ent­ed The­o­ret­i­cal Mor­phol­o­gy and Syn­tax 
+      \item Im­ple­ment­ed Gram­mars 
  \item Language Variation 
- \item Lecture Notes in Language Sciences 
- \item Monographs on Comparative Niger-Congo 
- \item Studies in Caribbean Languages 
- \item Studies in Diversity Linguistics 
- \item Studies in Laboratory Phonology 
- \item Topics at the Grammar-Discourse Interface 
- \item Translation and Multilingual Natural Language Processing   
-\end{itemize}
+      \end{itemize}
+     \end{column}
+\begin{column}{.48\textwidth}
+      \begin{itemize}
+      \item Lecture Notes in Language Sciences 
+      \item Monographs on Comparative Niger-Congo 
+      \item Studies in Caribbean Languages 
+      \item Studies in Diversity Linguistics 
+      \item Studies in Laboratory Phonology 
+      \item Topics at the Grammar-Discourse Interface 
+      \item Translation and Multilingual Natural Language Processing   
+      \end{itemize}
+     \end{column}
+\end{columns}
       \vskip1ex 
     \end{block}
     
     \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp7}
-    \begin{block}{Bücher}
+    \begin{block}{B\"{u}cher}
+      \includegraphics[width=.9\textwidth]{catalog.png}
+    \end{block}  
+  
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp8}
+    \begin{block}{Vertrieb}
+      \begin{columns}
+\begin{column}{.48\textwidth}
       \begin{itemize}
-      \item ...
+      \item Download von Webseite 
+      \item Print-on-demand 
       \end{itemize}
+\end{column}
+\begin{column}{.48\textwidth}
+      \begin{itemize}
+      \item Google Books 
+      \item Amazon
+      \end{itemize}
+\end{column}
+\end{columns}
+
        
     \end{block}
 
-    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp8}
+    \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp9}
     \begin{block}{http://www.langsci-press.org}
       \begin{center}
       \includegraphics[width=.8\linewidth]{webseite.png}
        
       \end{center} 
     \end{block}
+
+        \setbeamercolor*{block title}{fg=i6colorscheme5,bg=lsp10}
+    \begin{block}{Lizenzen}
+      \begin{itemize}
+       \item Alle Inhalte werden grunds{\"a}tzlich unter CC-BY bereitgestellt
+      \end{itemize}
+      {\tiny 
+      \item  Barnstar CC-BY Durin, Antonu 
+      } 
+    \end{block}
+
+
+
        
   \end{column}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

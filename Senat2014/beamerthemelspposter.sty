@@ -30,6 +30,9 @@
 \definecolor{lsp6}{HTML}{821F40}
 \definecolor{lsp7}{HTML}{B2C900}
 \definecolor{lsp8}{HTML}{578730} 
+\definecolor{lsp9}{HTML}{006121} 
+\definecolor{lsp10}{HTML}{00471a} 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % headline colors and fonts
@@ -77,8 +80,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block begin}{
   \vskip.75ex
-  \begin{beamercolorbox}[ht=3ex,dp=1ex,center,rounded=false,shadow=false,leftskip=1cm,colsep*=.75ex]{block title}%
-    \usebeamerfont*{block title}\insertblocktitle
+  \begin{beamercolorbox}[ht=5ex,dp=1ex,center,rounded=false,shadow=false,leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title} \insertblocktitle~{\hrulefill}
   \end{beamercolorbox}%
   {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
   \usebeamerfont{block body}%
@@ -98,7 +101,7 @@
       \begin{column}{.25\paperwidth}
         \vskip2ex
         \raggedleft
-         \includegraphics[width=.9\linewidth,keepaspectratio]{lsp-logo-white.png}
+         \includegraphics[width=.9\linewidth,keepaspectratio]{lsp-logo-white-blue.png}
       \end{column}
       \begin{column}{.05\paperwidth}
       \end{column}
@@ -127,11 +130,11 @@
   
   \leavevmode%
   \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{footline}%
-    Human Language Technology and Pattern Recognition
+    Language Science Press
     \hfill
-    \url{http://www-i6.informatik.rwth-aachen.de/~dreuw/}
+    \url{http://www.langsci-press.org}
     \hfill
-    \texttt{dreuw@cs.rwth-aachen.de}
+    \texttt{sebastian.nordhoff@langsci-press.org}
     \vskip1ex
   \end{beamercolorbox}
   \vskip0pt%

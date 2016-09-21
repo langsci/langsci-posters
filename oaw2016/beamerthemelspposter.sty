@@ -1,0 +1,135 @@
+\ProvidesPackage{beamerthemelspposter} % this style was created by Philippe Dreuw
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\selectcolormodel{rgb}
+\mode<presentation>
+
+% custom colors
+% http://www.colorsontheweb.com/colorwizard.asp#wizard, used start set: #535967
+% 535967 (mittel) 
+% 0e0f12 (schwarz)
+% a0a5b2 (hell) 
+% 5d5d5d (gray)   
+% cd995d (orange, hell) 
+% F79C32 (orange, mittel) 
+% FF7e00 (orange, stark) 
+% FFBD00 (orange, gelblich) 
+ 
+\definecolor{lsp-darkblue}{HTML}{63BEE1}  %  e.g. for headline background 
+\definecolor{lsp-lightblue}{HTML}{D0ECF6}  %  e.g. for poster background 
+
+\definecolor{lsp1}{HTML}{00A6DB}
+\definecolor{lsp2}{HTML}{005780}
+\definecolor{lsp3}{HTML}{FCC400}
+\definecolor{lsp4}{HTML}{ED7503} 
+\definecolor{lsp5}{HTML}{DB0030}
+\definecolor{lsp6}{HTML}{821F40}
+\definecolor{lsp7}{HTML}{B2C900}
+\definecolor{lsp8}{HTML}{578730} 
+\definecolor{lsp9}{HTML}{006121} 
+\definecolor{lsp10}{HTML}{00471a} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% headline colors and fonts
+\setbeamercolor{headline}{fg=white,bg=lsp-darkblue} 
+ 
+
+% footline colors and fonts
+\setbeamercolor{footline}{fg=white,bg=lsp-darkblue}
+% \setbeamerfont{footline}{fg=white,size=\normalsize}
+
+% poster background, body colors, and fonts
+\setbeamercolor*{normal text}{fg=black,bg=lsp-lightblue}
+
+% block environment
+\setbeamercolor*{block body}{bg=white,fg=black}
+\setbeamercolor*{block title}{fg=white,bg=black}
+\setbeamerfont{block title}{size=\large,series=\bf} 
+    
+\setbeamertemplate{itemize items}{{\usebeamercolor[bg]{headline}\scalebox{.6}{\bf\textrangle}}}
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[ht=5ex,dp=1ex,center,rounded=false,shadow=false,leftskip=.6cm,colsep*=.75ex]{headline}%
+    \usebeamerfont*{block title} 
+  \begin{tabular}{p{22.04cm}r}
+  \insertblocktitle&
+    {\usebeamercolor[bg]{block title}\raisebox{1.37cm}{\rule{14cm}{.4cm}}}
+  \end{tabular}
+
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[rounded=false,shadow=false,leftskip=1cm,colsep*=.75ex,sep=2ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{  
+  \leavevmode
+
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+    \begin{columns}[T]
+      \begin{column}{.25\paperwidth}
+        \vskip8.5ex
+        \hskip14ex
+        \raggedright
+         \includegraphics[height=24ex,keepaspectratio]{langsci_logo_nocolor.pdf}
+      \end{column}
+      \begin{column}{.07\paperwidth}
+      \end{column}
+      \begin{column}{.75\paperwidth}
+        \hskip2ex
+        \vskip8ex
+        \raggedright 
+	\parbox{35cm}{
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1.2ex]}
+        \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[.8ex]}
+        \usebeamercolor{auhor in headline}{\color{fg}\Large{\insertinstitute}\\[1ex]}     
+	}
+
+      \end{column}
+
+    \end{columns}
+        \vskip4ex
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+  
+  \leavevmode%
+  \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{footline}%
+    Language Science Press
+    \hfill
+    \url{http://www.langsci-press.org}
+    \hfill
+    \texttt{sebastian.nordhoff@langsci-press.org}
+    \vskip1ex
+  \end{beamercolorbox}
+  \vskip0pt%
+%   \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+%     \rule{0pt}{2pt}
+%   \end{beamercolorbox}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster"
+%%% End: 
